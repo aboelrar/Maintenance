@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@color/appbackground"
+    tools:context="com.carsyalla.www.cars.ui.comments">
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/commentList"></android.support.v7.widget.RecyclerView>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/nodata"
+       android:textSize="@dimen/_13ssp"
+       android:fontFamily="@font/heading"
+       android:gravity="center"
+       />
+
+</FrameLayout>

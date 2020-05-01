@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RadioButton
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:id="@+id/sort"
+    android:text="@string/nearest"
+    android:textSize="@dimen/_12ssp"
+    android:gravity="right|center"
+    android:layoutDirection="ltr"
+    android:fontFamily="@font/phargraphe"
+    android:background="@color/appbackground"
+    android:paddingRight="@dimen/_10sdp"
+    />
+</LinearLayout>

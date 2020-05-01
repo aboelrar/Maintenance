@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addCenter"
+        android:icon="@drawable/repair"
+        android:title="اضف مركز صيانه" />
+    <item
+        android:id="@+id/addstolencar"
+        android:icon="@drawable/stealcars"
+        android:title="اضف سياره مسروقه" />
+    <item
+        android:id="@+id/addreportedcar"
+        android:icon="@drawable/reportedcar"
+        android:title="اضف سيارة مشكوك بها" />
+</menu>

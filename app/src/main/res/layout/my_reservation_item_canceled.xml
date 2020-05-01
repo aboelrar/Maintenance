@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/myreservationbackground"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layoutDirection="ltr"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="right"
+        android:background="@drawable/timecornersbackground">
+        <TextView
+            android:layout_weight=".85"
+            android:layout_width="0dp"
+            android:text="الجمعه,20 مايو"
+            android:id="@+id/reservationTime"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/_5sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:src="@drawable/cilender"
+            android:padding="@dimen/_4sdp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="right|center"
+        android:weightSum="1"
+        >
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:text=""
+            android:paddingRight="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/green"
+            android:gravity="center|right"
+            android:textStyle="bold"
+            android:layout_weight=".8"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:id="@+id/resrvationName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:id="@+id/reservationImg"
+            android:layout_height="@dimen/_50sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="#ddd"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:orientation="horizontal"
+    android:id="@+id/cancel"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/canceliondone"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="@color/green"
+    android:textSize="@dimen/_12ssp"
+    />
+</LinearLayout>
+</LinearLayout>

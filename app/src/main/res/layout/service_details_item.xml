@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/servdetabackground"
+    android:gravity="right"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layoutDirection="ltr"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_height="@dimen/_30sdp">
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:text="عفشه"
+     android:paddingRight="@dimen/_8sdp"
+     android:paddingLeft="@dimen/_8ssp"
+     android:fontFamily="@font/phargraphe"
+     android:gravity="center|right"
+     android:id="@+id/service"
+     android:textSize="@dimen/_10ssp"
+     android:textColor="@android:color/black"/>
+
+ <ImageView
+     android:layout_width="@dimen/_15sdp"
+     android:layout_height="@dimen/_15sdp"
+     android:src="@drawable/time"
+     android:id="@+id/icon"
+     android:layout_marginRight="@dimen/_5sdp"
+     android:layout_gravity="center"
+     />
+
+</LinearLayout>

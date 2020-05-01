@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    android:elevation="@dimen/_4sdp"
+    app:cardCornerRadius="15dp"
+    android:layoutDirection="ltr"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_13ssp"
+                android:fontFamily="@font/heading"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="@string/reservenow"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#ddd"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:gravity="center|right"
+                android:fontFamily="@font/phargraphe"
+                android:background="@drawable/emailbackground"
+                android:drawableRight="@drawable/user"
+                android:id="@+id/username"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:hint="@string/userName"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:fontFamily="@font/phargraphe"
+                android:inputType="number"
+                android:gravity="center|right"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:id="@+id/phone"
+                android:background="@drawable/emailbackground"
+                android:drawableRight="@drawable/phone"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/phonenum"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:id="@+id/mark"
+                android:gravity="center|right"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/phargraphe"
+                android:paddingRight="@dimen/_10sdp"
+                android:background="@drawable/emailbackground"
+                android:drawableRight="@drawable/caricon"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/brand"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:id="@+id/manufacturingyear"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/phargraphe"
+                android:inputType="number"
+                android:gravity="right|center"
+                android:background="@drawable/emailbackground"
+                android:drawableRight="@drawable/key"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/manufacturingyear"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:id="@+id/reservationDate"
+                android:gravity="right|center"
+                android:fontFamily="@font/phargraphe"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/emailbackground"
+                android:drawableRight="@drawable/date"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/reservationDate"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:layout_height="@dimen/_60sdp"
+                android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="حجز"
+                android:fontFamily="@font/heading"
+                android:id="@+id/reserve"
+                android:textSize="@dimen/_12ssp"
+                android:background="@color/blue"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+

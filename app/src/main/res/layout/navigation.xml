@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/menuheaderbg"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/usernav"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:text="@string/user_nav_name"
+            android:gravity="center"
+            android:id="@+id/userName"
+            android:fontFamily="@font/heading"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/green"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:weightSum="1"
+        android:id="@+id/home"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/_10sdp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight=".9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/home"
+            android:fontFamily="@font/heading"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/_15sdp"
+            />
+        <ImageView
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:src="@drawable/home"
+            android:tint="@color/green"
+            android:layout_height="@dimen/_17sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:weightSum="1"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/_10sdp"
+         android:id="@+id/myFavourite"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight=".9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/heading"
+            android:text="@string/favourite"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/_15sdp"
+            />
+        <ImageView
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:tint="@color/green"
+            android:src="@drawable/heart"
+            android:layout_height="@dimen/_17sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:weightSum="1"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/_10sdp"
+        android:id="@+id/searchNav"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight=".9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/heading"
+            android:text="@string/search"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/_15sdp"
+            />
+        <ImageView
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:tint="@color/green"
+            android:src="@drawable/magnifying"
+            android:layout_height="@dimen/_17sdp" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:weightSum="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/_10sdp"
+             android:id="@+id/my_reservation"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/myReservation"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_11ssp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/heading"
+                android:paddingRight="@dimen/_15sdp"
+                />
+            <ImageView
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:src="@drawable/calendar"
+                android:tint="@color/green"
+                android:layout_height="@dimen/_17sdp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:weightSum="1"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/_10sdp"
+        android:id="@+id/addCenter"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight=".9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/heading"
+            android:text="@string/addcenter"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/_15sdp"
+            />
+        <ImageView
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:src="@drawable/plus"
+            android:tint="@color/green"
+            android:layout_height="@dimen/_17sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:weightSum="1"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/_10sdp"
+        android:id="@+id/problems"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight=".9"
+            android:layout_width="0dp"
+            android:fontFamily="@font/heading"
+            android:layout_height="match_parent"
+            android:text="@string/problems"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/_15sdp"
+            />
+        <ImageView
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:tint="@color/green"
+            android:src="@drawable/information"
+            android:layout_height="@dimen/_17sdp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:weightSum="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/_10sdp"
+            android:id="@+id/editprofile"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:fontFamily="@font/heading"
+                android:layout_height="match_parent"
+                android:text="@string/edtiprofile"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_11ssp"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/_15sdp"
+                />
+            <ImageView
+                android:layout_weight=".1"
+                android:layout_width="0dp"
+                android:src="@drawable/user"
+                android:tint="@color/green"
+                android:layout_height="@dimen/_17sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/green"
+        android:fontFamily="@font/heading"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+</RelativeLayout>

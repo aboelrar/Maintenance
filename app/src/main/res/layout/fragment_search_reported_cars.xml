@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/carsyalla"
+            android:layout_marginTop="@dimen/_50sdp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/plateType"
+            android:fontFamily="@font/heading"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp" />
+        <RadioGroup
+            android:id="@+id/paltetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:buttonTint="@color/green"
+                android:fontFamily="@font/phargraphe"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/type_2" />
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:checked="true"
+                android:buttonTint="@color/green"
+                android:fontFamily="@font/phargraphe"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:text="@string/type_1" />
+
+
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_17sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/phargraphe"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="بحث"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:hint="@string/carnum"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/phargraphe"
+                    android:imeOptions="actionDone"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:id="@+id/plateNum"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableRight="@drawable/caricon"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:background="@drawable/searchcenterbg"
+                    >
+                </EditText>
+            </LinearLayout>
+        </RelativeLayout>
+        <Button
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/menu"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:textSize="@dimen/_13ssp"
+            android:text="@string/search"
+            android:fontFamily="@font/heading"
+            android:id="@+id/search"
+            android:layout_height="@dimen/_30sdp" />
+    </LinearLayout>
+</LinearLayout>
+

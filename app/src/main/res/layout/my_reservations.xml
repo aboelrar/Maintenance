@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    tools:context="com.carsyalla.www.cars.my_reservations">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/blue"
+        android:text="@string/myReservation"
+        android:gravity="center"
+        android:fontFamily="@font/heading"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myreservationList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appbackground"></android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:indeterminateTint="@color/green"
+            android:id="@+id/loading"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:id="@+id/nodatagif"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:id="@+id/nodata"
+            android:gravity="center"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/heading"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+</LinearLayout>

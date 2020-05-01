@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/reportedCae"
+        android:icon="@drawable/reportedcar"
+        android:title="سيارات مشكوك بها"
+        />
+    <item android:id="@+id/stolenCars"
+        android:icon="@drawable/stealcars"
+        android:title="سيارات مسروقه"
+        />
+    <item android:id="@+id/allCenters"
+        android:icon="@drawable/repair"
+        android:title="مراكز صيانه"
+
+        />
+</menu>

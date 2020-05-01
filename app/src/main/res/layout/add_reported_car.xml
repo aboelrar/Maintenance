@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:focusable="true"
+    android:background="@drawable/centerimage"
+    android:focusableInTouchMode="true"
+    tools:context="com.carsyalla.www.cars.add_reported_car">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nested">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10ssp"
+                >
+                <LinearLayout
+                    android:layout_weight=".3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/album"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/addImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/myalbum" />
+
+                </LinearLayout>
+                <View
+                    android:layout_weight=".1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:layout_weight=".3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:id="@+id/uplaodImg"
+                    android:src="@drawable/mainimg" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="@string/brand"
+                android:fontFamily="@font/phargraphe"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:fontFamily="@font/phargraphe"
+                android:id="@+id/mark"
+                android:gravity="center|right"
+                android:inputType="textEmailAddress"
+                android:paddingRight="@dimen/_10sdp"
+                android:background="@drawable/emailbackground"
+                android:drawableRight="@drawable/caricon"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/brand"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/phargraphe"
+                android:text="@string/phonenum"
+                android:textSize="@dimen/_13ssp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:inputType="number"
+                android:fontFamily="@font/phargraphe"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:id="@+id/phone"
+                android:gravity="right|center"
+                android:background="@drawable/emailbackground"
+                android:drawableRight="@drawable/phone"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/phonenum"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/city"
+                android:fontFamily="@font/phargraphe"
+                android:textSize="@dimen/_13ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/emailbackground"
+                android:hint="@string/city"
+                android:drawableRight="@drawable/skyline"
+                android:fontFamily="@font/phargraphe"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:drawablePadding="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:id="@+id/city"
+                android:paddingRight="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/plateType"
+                android:fontFamily="@font/phargraphe"
+                android:textSize="@dimen/_13ssp" />
+            <RadioGroup
+                android:id="@+id/paltetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:fontFamily="@font/phargraphe"
+                    android:layout_gravity="start"
+                    android:text="@string/type_2" />
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:checked="true"
+                    android:buttonTint="@color/green"
+                    android:fontFamily="@font/phargraphe"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="@string/type_1" />
+
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/plate_number"
+                android:fontFamily="@font/phargraphe"
+                android:textSize="@dimen/_13ssp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/emailbackground"
+                android:hint="@string/plate_number"
+                android:fontFamily="@font/phargraphe"
+                android:drawableRight="@drawable/licenseplate"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:drawablePadding="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:gravity="center|right"
+                android:id="@+id/plate_number"
+                android:paddingRight="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"></EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="@string/myloca"
+                android:fontFamily="@font/phargraphe"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/emailbackground"
+                android:drawableRight="@drawable/address"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/myloca"
+                android:gravity="center|right"
+                android:fontFamily="@font/phargraphe"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:id="@+id/myloca"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:paddingRight="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/phargraphe"
+                android:text="@string/stolenAddress"
+                android:textSize="@dimen/_13ssp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/emailbackground"
+                android:hint="@string/stolenAddress"
+                android:fontFamily="@font/phargraphe"
+                android:drawableRight="@drawable/address"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:drawablePadding="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:gravity="center|right"
+                android:id="@+id/stolenAddress"
+                android:paddingRight="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"></EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/phargraphe"
+                android:text="@string/notes"
+                android:textSize="@dimen/_13ssp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:background="@drawable/emailbackground"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:id="@+id/notes"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/phargraphe"
+                android:singleLine="false"
+                android:textSize="@dimen/_12ssp"></EditText>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/addstolencar"
+        android:background="@color/blue"
+        android:fontFamily="@font/heading"
+        android:text="@string/addreportedcar"
+        android:textSize="@dimen/_13ssp" />
+</RelativeLayout>
